@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby - Rafli's Retro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <header id="top-bar">
+            <div class="logo">
+                <img src="assets/img/rafli_raihan.png" width="200px" alt="">
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="galeri.html">Gallery</a>
+                <a href="hobi.html">Hobby</a>
+            </nav>
+        </header>
+
+        <aside id="side-bar">
+            <h2>Socials</h2>
+            <ol>
+                <li><a href="https://www.instagram.com/rafli_r4ihan/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com/fli.raihan/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://rafli-raihan.github.io/" target="_blank" rel="noopener noreferrer">The Other Website</a></li>
+            </ol>
+        </aside>
+
+        <main id="main-content" class="hobby-layout">
+            <h1>Hobby & Interests</h1>
+            <p>Here's the things that I do in my spare times.</p>
+            
+            <ul>
+                <li>Tinkering with PCs
+                    <ul>
+                        <li>Building a sleeper gaming PC <i> from the future...</i></li>
+                        <li>Tinkering with this new open-source UNIX they call Linux</li>
+                    </ul>
+                </li>
+                <li>Playing Music
+                    <ul>
+                        <li>Playing the Bass as if I were Krist Novoselic</li>
+                        <li>Writing songs and performing it with a band named '<a href="https://www.instagram.com/amongthehow/" target="_blank">Among The How?</a>'</li>
+                    </ul>
+                </li>
+                <li>Playing Video Games (PS1 & Gameboy)</li>
+                <li>
+                    Programming software with Delphi and C, also this website with HTML and CSS, <br>
+                    and also a video game project in <a href="https://www.instagram.com/rjk_productions/" target="_blank" rel="noopener noreferrer">RJK Productions</a>
+                </li>
+            </ul>
+
+            <div class="form-container">
+                <hr style="border: 1px solid gray;">
+                <h3>Contact Me</h3>
+                <p>Do you share the same interests? Fill out the form below and get in touch with me!</p>
+                
+                <form action="#" method="POST">
+                    <div class="form-grid-table">
+                        <label for="nama">Your Name</label>
+                        <div><input type="text" id="nama" name="nama" required></div>
+                        
+                        <label for="password">Password <i>(Secret Code)</i> :</label>
+                        <div><input type="password" id="password" name="password"></div>
+                        
+                        <label>Favourite Programming Language :</label>
+                        <div>
+                            <input type="radio" id="cpp" name="prog_lang" value="C/C++">
+                            <label for="cpp">C/C++</label><br>
+                            <input type="radio" id="java" name="prog_lang" value="Java">
+                            <label for="java">Java</label><br>
+                            <input type="radio" id="turbo_pascal" name="prog_lang" value="Turbo Pascal">
+                            <label for="turbo_pascal">Turbo Pascal</label><br>
+                            <input type="radio" id="php" name="prog_lang" value="PHP">
+                            <label for="php">PHP</label>
+                        </div>
+                        
+                        <label>Device Owned :</label>
+                        <div>
+                            <input type="checkbox" id="pc" name="device" value="PC">
+                            <label for="pc">PC</label><br>
+                            <input type="checkbox" id="laptop" name="device" value="Laptop">
+                            <label for="laptop">Laptop</label><br>
+                            <input type="checkbox" id="playstation" name="device" value="Playstation">
+                            <label for="playstation">Playstation</label><br>
+                            <input type="checkbox" id="gameboy" name="device" value="Gameboy">
+                            <label for="gameboy">Gameboy</label><br>
+                        </div>
+                        
+                        <label for="kategori">Main Interest :</label>
+                        <div>
+                            <select id="kategori" name="kategori">
+                                <option value="tech">Tech</option>
+                                <option value="music">Music</option>
+                                <option value="gaming">Games</option>
+                            </select>
+                        </div>
+                        
+                        <label for="pesan">Messages :</label>
+                        <div><textarea id="pesan" name="pesan" rows="4" cols="35" placeholder="Tulis pesanmu di sini..."></textarea></div>
+                        
+                        <div></div> <div>
+                            <input type="submit" value="Send">
+                            <input type="reset" value="Reset Form">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer id="bottom-bar">
+            <div>
+                <p>Rafli Raihan's</p>
+            </div>
+            <div>
+                <address>Jakarta, May 21 1998</address>
+            </div>
+            <div>
+                Contact: <a href="mailto:raihanrafli81@proton.me">raihanrafli81@proton.me</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

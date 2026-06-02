@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-bg-dark: #0d1117;      
+    --color-surface: #c0c0c0;     
+    --color-display: #000080;     
+    --color-accent-pink: #ff007f;  
+    --color-accent-teal: #008080;  
+    --color-footer: #808080;      
+    --color-text-main: #000000;   
+    --color-text-light: #ffffff;  
+}
+
+body {
+    background-color: var(--color-surface);
+    margin: 0;
+    font-family: "Noto Serif", serif;
+}
+
+a {
+    color: var(--color-display);
+}
+
+a:hover {
+    color: var(--color-accent-pink);
+}
+
+/* --- MASTER GRID CONTAINER --- */
+#app-container {
+    display: grid;
+    grid-template-columns: 15vw 1fr; 
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh;
+}
+
+/* --- TOP BAR --- */
+#top-bar {
+    grid-column: 1 / span 2; 
+    background-color: var(--color-footer);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#top-bar .nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-text-light);
+    margin-left: 15px;
+}
+
+#top-bar .nav-links a:hover {
+    color: var(--color-accent-pink);
+}
+
+/* --- SIDE BAR --- */
+#side-bar {
+    grid-column: 1;
+    background-color: var(--color-accent-teal);
+    color: var(--color-text-light);
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#side-bar h2 {
+    padding-left: 7%;
+    margin-top: 0;
+}
+
+#side-bar a {
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+
+#side-bar a:hover {
+    color: var(--color-accent-pink);
+}
+
+/* --- MAIN CONTENT BASE --- */
+#main-content {
+    grid-column: 2;
+    padding: 20px;
+}
+
+/* --- BOTTOM BAR --- */
+#bottom-bar {
+    grid-column: 1 / span 2; 
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#bottom-bar a {
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+
+#bottom-bar a:hover {
+    color: var(--color-accent-pink);
+}
+
+/* --- STYLING KHAS HALAMAN HOME --- */
+.home-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bio-text p {
+    text-align: justify;
+    max-width: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+#bio-first-paragraph:first-letter{
+    font-size: 92px;
+    line-height: 0.5;
+    float: inline-start;
+}
+
+/* --- STYLING KHAS HALAMAN GALLERY --- */
+.gallery-layout h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Pengganti cellpadding="15" di table */
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+/* --- STYLING KHAS HALAMAN HOBBY --- */
+.hobby-layout h1 {
+    margin-top: 0;
+}
+
+.form-container {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.form-grid-table {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px 15px;
+    align-items: start;
+}
