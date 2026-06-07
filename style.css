@@ -171,14 +171,21 @@ h1 {
     text-indent: 10%;
 }
 
+#bio-first-paragraph{
+    text-indent: 0;
+}
+
 #bio-first-paragraph:first-letter{
     font-size: 92px;
     line-height: 0.5;
     float: inline-start;
 }
 
-#bio-first-paragraph{
-    text-indent: 0;
+#quotes{
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #303030;
+    text-align: center;
 }
 
 /* --- GALLERY --- */
