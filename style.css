@@ -35,23 +35,54 @@ a:hover {
 
 /* --- TOP BAR --- */
 #top-bar {
-    grid-column: 1 / span 2; 
-    background-color: var(--color-footer);
+    grid-column: 1 / span 2;
+    background-color: var(--color-display); 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+
+    border-top: 1.5px solid #ffffff;
+    border-left: 1.5px solid #ffffff;
+    border-right: 1.5px solid #808080;
+    border-bottom: 1.5px solid #808080;
+    box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #e0e0e0;
+}
+
+.titlebar-left {
+    display: flex;
+    align-items: center;
+}
+
+.titlebar-left img {
+    display: block;
+}
+
+#top-bar .nav-links {
+    display: flex;
+    gap: 8px;
 }
 
 #top-bar .nav-links a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--color-text-light);
-    margin-left: 15px;
+    font-size: 10pt;
+    font-family: 'MS Sans Serif', Tahoma, Arial, sans-serif;
+    color: #000000;              
+    background-color: var(--color-surface); 
+    padding: 4px 12px;           
+    box-sizing: border-box;
+    
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
 }
 
 #top-bar .nav-links a:hover {
-    color: var(--color-accent-pink);
+    color: var(--color-accent-pink); 
+    background-color: #e0e0e0;      
 }
 
 /* --- SIDE BAR --- */
@@ -61,7 +92,14 @@ a:hover {
     color: var(--color-text-light);
     font-weight: bold;
     padding-top: 20px;
+
+    border-top: 1.5px solid #808080;
+    border-left: 1.5px solid #ffffff;
+    border-right: 1.5px solid #808080;
+    border-bottom: 1.5px solid #808080;
+    box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #e0e0e0;
 }
+
 
 #side-bar h2 {
     padding-left: 7%;
@@ -77,21 +115,27 @@ a:hover {
     color: var(--color-accent-pink);
 }
 
-/* --- MAIN CONTENT BASE --- */
+/* --- MAIN --- */
 #main-content {
     grid-column: 2;
     padding: 20px;
 }
 
-/* --- BOTTOM BAR --- */
+/* --- FOOTER --- */
 #bottom-bar {
     grid-column: 1 / span 2; 
     background-color: var(--color-bg-dark);
     color: var(--color-text-light);
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    padding: 10px 0;
+    padding-top: 10px;
+
+    border-top: 1.5px solid #808080;
+    border-left: 1.5px solid #ffffff;
+    border-right: 1.5px solid #808080;
+    border-bottom: 1.5px solid #808080;
+    box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #e0e0e0;
 }
 
 #bottom-bar a {
@@ -103,7 +147,7 @@ a:hover {
     color: var(--color-accent-pink);
 }
 
-/* --- STYLING KHAS HALAMAN HOME --- */
+/* --- HOME --- */
 .home-layout {
     display: flex;
     flex-direction: column;
@@ -125,7 +169,7 @@ a:hover {
     float: inline-start;
 }
 
-/* --- STYLING KHAS HALAMAN GALLERY --- */
+/* --- GALLERY --- */
 .gallery-layout h1 {
     text-align: center;
     padding-top: 20px;
@@ -142,7 +186,7 @@ a:hover {
 .gallery-row {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Pengganti cellpadding="15" di table */
+    gap: 30px;
     flex-wrap: wrap;
 }
 
@@ -150,7 +194,7 @@ a:hover {
     text-align: center;
 }
 
-/* --- STYLING KHAS HALAMAN HOBBY --- */
+/* --- HOBBY --- */
 .hobby-layout h1 {
     margin-top: 0;
 }
@@ -165,4 +209,27 @@ a:hover {
     grid-template-columns: max-content 1fr;
     gap: 10px 15px;
     align-items: start;
+}
+
+/* --- RESPONSIVE UI ---- */
+@media screen and (max-width: 900px) {
+    #side-bar {
+        grid-column: 1 / span 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    #side-bar ol{
+        margin-top: 0;
+    }
+
+    #side-bar a{
+        margin-right: 2em;
+    }
+
+    #main-content {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+    
 }
