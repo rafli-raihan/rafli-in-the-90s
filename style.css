@@ -161,9 +161,17 @@ h1 {
     text-align: center;
 }
 
+.home-layout img {
+    border-top: 2px solid #242424;
+    border-left: 2px solid #3d3d3d;
+    border-right: 2px solid #272727;
+    border-bottom: 2px solid #808080;
+    box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #e0e0e0;  
+}
+
 .bio-text p {
     text-align: justify;
-    max-width: 60vh;
+    max-width: 90vh;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -190,6 +198,22 @@ h1 {
 }
 
 /* --- GALLERY --- */
+.gallery-layout{
+    background-image: url("assets/img/gallery_background_alt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    min-width: 100%;
+    margin-top: 5em;
+    
+    border-top: 1.5px solid #242424;
+    border-left: 1.5px solid #3d3d3d;
+    border-right: 1.5px solid #272727;
+    border-bottom: 1.5px solid #808080;
+    box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #e0e0e0;
+}
+
 .gallery-layout h1 {
     text-align: center;
     padding-top: 20px;
@@ -216,8 +240,14 @@ h1 {
 }
 
 /* --- HOBBY --- */
+.hobby-layout {
+    margin-top: 3em;
+    text-align: justify;
+    max-width: 90vh;
+}
+
 .hobby-layout h1 {
-    margin-top: 0;
+    margin-top: 1em;
 }
 
 .form-container {
@@ -252,5 +282,9 @@ h1 {
         grid-column: 1 / span 2;
         grid-row: 2;
     }
-    
+
+    .bio-text, .hobby-layout{
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
 }
