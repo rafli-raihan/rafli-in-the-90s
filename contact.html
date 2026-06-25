@@ -10,80 +10,89 @@
     <div id="app-container">
         <header id="top-bar">
             <div class="logo">
-                <img src="assets/img/rafli_raihan.png" alt="">
+                <img src="assets/img/rafli_raihan.png" alt="Rafli Raihan">
             </div>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger-btn">MENU</label>
+            
             <nav class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="index.html#gallery">Gallery</a>
                 <a href="index.html#hobby">Hobby</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="contact.html">Contact Me</a>
             </nav>
         </header>
 
-        <aside id="side-bar">
-            <h2>Socials</h2>
-            <ol>
-                <li><a href="https://www.instagram.com/rafli_r4ihan/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="https://www.facebook.com/fli.raihan/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li><a href="https://rafli-raihan.github.io/" target="_blank" rel="noopener noreferrer">The Other Website</a></li>
-            </ol>
-        </aside>
+        <div class="main-wrapper">
+            <aside id="side-bar">
+                <h2>Socials</h2>
+                <ol>
+                    <li><a href="https://www.instagram.com/rafli_r4ihan/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/fli.raihan/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://rafli-raihan.github.io/" target="_blank" rel="noopener noreferrer">The Other Website</a></li>
+                    <li><a href="https://github.com/rafli-raihan" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ol>
+            </aside>
 
-        <div id="main-content">
-            <div class="form-container">
-                <h1>Contact Me</h1>
-                <p>Do you share the same interests? Fill out the form below and get in touch with me!</p>
-                
-                <form action="#" method="POST">
-                    <div class="form-grid-table">
-                        <label for="nama">Your Name</label>
-                        <div><input type="text" id="nama" name="nama" required></div>
-                        
-                        <label for="password">Password <i>(Secret Code)</i> :</label>
-                        <div><input type="password" id="password" name="password"></div>
-                        
-                        <label>Favourite Programming Language :</label>
-                        <div>
-                            <input type="radio" id="cpp" name="prog_lang" value="C/C++">
-                            <label for="cpp">C/C++</label><br>
-                            <input type="radio" id="java" name="prog_lang" value="Java">
-                            <label for="java">Java</label><br>
-                            <input type="radio" id="turbo_pascal" name="prog_lang" value="Turbo Pascal">
-                            <label for="turbo_pascal">Turbo Pascal</label><br>
-                            <input type="radio" id="php" name="prog_lang" value="PHP">
-                            <label for="php">PHP</label>
+            <main id="main-content">
+                <div class="form-container">
+                    <h1>Contact Me</h1>
+                    <p>Do you share the same interests? Fill out the form below and get in touch with me!</p>
+                    
+                    <form action="#" method="POST">
+                        <div class="form-grid-table">
+                            <label for="nama">Your Name</label>
+                            <div><input type="text" id="nama" name="nama" required></div>
+                            
+                            <label for="password">Password <i>(Secret Code)</i> :</label>
+                            <div><input type="password" id="password" name="password"></div>
+                            
+                            <label>Favourite Programming Language :</label>
+                            <div>
+                                <input type="radio" id="cpp" name="prog_lang" value="C/C++">
+                                <label for="cpp">C/C++</label><br>
+                                <input type="radio" id="java" name="prog_lang" value="Java">
+                                <label for="java">Java</label><br>
+                                <input type="radio" id="turbo_pascal" name="prog_lang" value="Turbo Pascal">
+                                <label for="turbo_pascal">Turbo Pascal</label><br>
+                                <input type="radio" id="php" name="prog_lang" value="PHP">
+                                <label for="php">PHP</label>
+                            </div>
+                            
+                            <label>Device Owned :</label>
+                            <div>
+                                <input type="checkbox" id="pc" name="device" value="PC">
+                                <label for="pc">PC</label><br>
+                                <input type="checkbox" id="laptop" name="device" value="Laptop">
+                                <label for="laptop">Laptop</label><br>
+                                <input type="checkbox" id="playstation" name="device" value="Playstation">
+                                <label for="playstation">Playstation</label><br>
+                                <input type="checkbox" id="gameboy" name="device" value="Gameboy">
+                                <label for="gameboy">Gameboy</label><br>
+                            </div>
+                            
+                            <label for="kategori">Main Interest :</label>
+                            <div>
+                                <select id="kategori" name="kategori">
+                                    <option value="tech">Tech</option>
+                                    <option value="music">Music</option>
+                                    <option value="gaming">Games</option>
+                                </select>
+                            </div>
+                            
+                            <label for="pesan">Messages :</label>
+                            <div><textarea id="pesan" name="pesan" rows="4" cols="35" placeholder="Your messages right here..."></textarea></div>
+                            
+                            <div></div> 
+                            <div>
+                                <input type="submit" value="Send">
+                                <input type="reset" value="Reset Form">
+                            </div>
                         </div>
-                        
-                        <label>Device Owned :</label>
-                        <div>
-                            <input type="checkbox" id="pc" name="device" value="PC">
-                            <label for="pc">PC</label><br>
-                            <input type="checkbox" id="laptop" name="device" value="Laptop">
-                            <label for="laptop">Laptop</label><br>
-                            <input type="checkbox" id="playstation" name="device" value="Playstation">
-                            <label for="playstation">Playstation</label><br>
-                            <input type="checkbox" id="gameboy" name="device" value="Gameboy">
-                            <label for="gameboy">Gameboy</label><br>
-                        </div>
-                        
-                        <label for="kategori">Main Interest :</label>
-                        <div>
-                            <select id="kategori" name="kategori">
-                                <option value="tech">Tech</option>
-                                <option value="music">Music</option>
-                                <option value="gaming">Games</option>
-                            </select>
-                        </div>
-                        
-                        <label for="pesan">Messages :</label>
-                        <div><textarea id="pesan" name="pesan" rows="4" cols="35" placeholder="Your messages right here..."></textarea></div>
-                        
-                        <div></div> <div>
-                            <input type="submit" value="Send">
-                            <input type="reset" value="Reset Form">
-                        </div>
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
+            </main>
         </div>
 
         <footer id="bottom-bar">
